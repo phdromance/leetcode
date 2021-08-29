@@ -1,10 +1,4 @@
-class RemoveDuplicates {
-    public static void main(String[] args) {
-        int[] nums = { 1, 1, 2, 3, 5 };
-        int ans = new RemoveDuplicates().removeDuplicates(nums);
-        System.out.println(ans);
-    }
-
+class Solution {
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0)
             return 0;
