@@ -1,5 +1,6 @@
-// 26. Remove Duplicates from Sorted Array
-// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+// [Array]
+// 26. Remove Duplicates from Sorted Array https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+// Similar to 283 Move Zeroes
 
 var removeDuplicates = function(nums) {
     // Note that no extra memory is allowed! Should only modify array in-place
