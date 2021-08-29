@@ -1,3 +1,6 @@
+// 26. Remove Duplicates from Sorted Array
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 var removeDuplicates = function(nums) {
     // Note that no extra memory is allowed! Should only modify array in-place
     
