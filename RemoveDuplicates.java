@@ -6,7 +6,7 @@ class Solution {
         int id = 1;
         for (int i = 1; i < nums.length; i++) {
             if (nums[id - 1] != nums[i]) {
-                nums[id] = nums[i];
+                nums[id] = nums[i]; // Do not directly use id++ as the index of the array!
                 id++;
             }
         }
