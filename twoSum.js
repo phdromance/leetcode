@@ -3,8 +3,8 @@
 // Assume 2 numbers are A and B. You will always return 
 // results when the loop arrives at B. All numbers before
 // B will be inserted into the hash map. So the logic is to
-// see if the assumed A for the current number has been inserted 
-// into hash map.
+// see if the assumed A for the current number has already been inserted 
+// into hash map. 
  
 
 var twoSum = function (nums, target) {
@@ -12,7 +12,7 @@ var twoSum = function (nums, target) {
 
 	for (let i = 0; i < nums.length; i++) {
 		var num2find = target - nums[i];
-		if (numObj.hasOwnProperty(num2find) && numObj[num2find] != i) {
+		if (numObj.hasOwnProperty(num2find) && numObj[num2find] != i) { // the second condition might never be true. Todo: double check this. 
 			return [i, numObj[num2find]];
 		}
 		else {
