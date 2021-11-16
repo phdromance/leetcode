@@ -1,4 +1,11 @@
 // 1. two sum https://leetcode.com/problems/two-sum/
+// Key is to use a hash map to avoid 2nd loop. 
+// Assume 2 numbers are A and B. You will always return 
+// results when the loop arrives at B. All numbers before
+// B will be inserted into the hash map. So the logic is to
+// see if the assumed A for the current number has been inserted 
+// into hash map.
+ 
 
 var twoSum = function (nums, target) {
 	var numObj = { };
